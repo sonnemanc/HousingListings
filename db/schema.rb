@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(version: 2021_12_19_195226) do
 
   create_table "listings", force: :cascade do |t|
     t.string "name"
-    t.string "type"
+    t.string "kind"
     t.integer "bedrooms"
     t.integer "bathrooms"
     t.float "price"

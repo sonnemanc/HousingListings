@@ -1,6 +1,6 @@
 listings = {
     "Benirus Manor" => {
-        :type => "House",
+        :kind => "Home",
         :bedrooms => 5,
         :bathrooms => 3.5,
         :price => 1500000,
@@ -11,7 +11,7 @@ listings = {
         :postal => 44101,
     },
     "Arborwatch" => {
-        :type => "Condominium",
+        :kind => "Condominium",
         :bedrooms => 2,
         :bathrooms => 2,
         :price => 1000000,
@@ -22,7 +22,7 @@ listings = {
         :postal => 98101,
     },
     "Rosethorn Hall" => {
-        :type => "House",
+        :kind => "Home",
         :bedrooms => 5,
         :bathrooms => 3,
         :price => 905000,
@@ -33,7 +33,7 @@ listings = {
         :postal => 83701,
     },
     "Honeyside" => {
-        :type => "Condominium",
+        :kind => "Condominium",
         :bedrooms => 2,
         :bathrooms => 1.5,
         :price => 405500,
@@ -44,7 +44,7 @@ listings = {
         :postal => 67052,
     },
     "Proudspire Manor" => {
-        :type => "House",
+        :kind => "Home",
         :bedrooms => 6,
         :bathrooms => 4.5,
         :price => 17500000,
@@ -55,7 +55,7 @@ listings = {
         :postal => 14201,
     },
     "Breezehome" => {
-        :type => "House",
+        :kind => "Home",
         :bedrooms => 4,
         :bathrooms => 2.5,
         :price => 10000000,
@@ -67,17 +67,11 @@ listings = {
     },
 }
 
-#create_table "listings", force: :cascade do |t|
-#    t.string "name"
-#    t.string "type"
-#    t.integer "bedrooms"
-#    t.integer "bathrooms"
-#    t.float "price"
-#    t.text "description"
-#    t.datetime "created_at", precision: 6, null: false
-#    t.datetime "updated_at", precision: 6, null: false
-#    t.string "street"
-#    t.string "city"
-#    t.string "state"
-#    t.integer "postal"
-#end
+listings.each do |name, listing_hash|
+    l = Listing.new
+    l.name = name
+    listing_hash.each do |attribute, value|
+        l[attribute] = value
+    end
+    l.save
+end
