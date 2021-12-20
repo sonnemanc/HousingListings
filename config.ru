@@ -2,4 +2,6 @@ require "./config/environment"
 
 
 
-run ListingController
+use ListingController
+use UsersController
+run ApplicationController
