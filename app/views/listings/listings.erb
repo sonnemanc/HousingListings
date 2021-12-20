@@ -4,10 +4,12 @@
     <div class="card">
       <h4><%= item.name %></h4>
       <img src="#{item.pic}">
-      <p class="price"><%= item.price %></p>
+      <p class="price">$<%= item.price %></p>
       <p>Bedrooms: <%= item.bedrooms %></p>
       <p>Bathrooms: <%= item.bathrooms%></p>
-      <P><Button>Details</button></p>
+      <form method="GET" action="/listings/<%=item.id%>">
+        <button type="submit">Details</button>
+      </form>
     </div>
   </div>
 <% end %>
@@ -26,7 +28,7 @@ body {
 
 .column {
   float: left;
-  width: 25%;
+  width: 33%;
   padding: 0 10px;
 }
 

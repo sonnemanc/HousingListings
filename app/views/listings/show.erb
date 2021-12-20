@@ -1,0 +1,21 @@
+<div class="card"
+<h4><%= @listing.name %></h4>
+<img src="#{@listing.pic}">
+<p class="price">$<%= @listing.price %></p>
+<p>Bedrooms: <%= @listing.bedrooms %></p>
+<p>Bathrooms: <%= @listing.bathrooms%></p>
+<p><%= @listing.description %></p>
+
+<form method="post" action="/listings/<%=@listing.id%>/delete">
+  <input id="hidden" type="hidden" name="_method" value="DELETE">
+  <input type="submit" value="Delete Listing">
+</form>
+<form method="patch" action="/listings/<%=@listing.id%>/edit">
+  <input id="hidden" type="hidden" name="_method" value="EDIT">
+  <input type="submit" value="Edit Listing">
+</form>
+</div>
+
+<style>
+.card {width: 50%;}
+</style>
