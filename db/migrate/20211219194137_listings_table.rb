@@ -7,6 +7,7 @@ class ListingsTable < ActiveRecord::Migration[6.1]
       t.integer :bathrooms
       t.float :price
       t.text :description
+      t.text :pic
 
       t.timestamps
     end

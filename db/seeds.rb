@@ -9,6 +9,7 @@ listings = {
         :city => "Cleveland",
         :state => "Ohio",
         :postal => 44101,
+        :pic => "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiGyyoK7yKUn0HVMdME-RCBxOh8qs5J7XQnFZ_Idq_ywsYJ-gNatSG-TbOCSkiZned3-c&usqp=CAU"
     },
     "Arborwatch" => {
         :kind => "Condominium",
@@ -20,6 +21,7 @@ listings = {
         :city => "Seattle",
         :state => "Washington",
         :postal => 98101,
+        :pic => "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLmZjynQNZKMCC9DL5e1zI5kq3aTKbxYx79pck5eX9HTbuHemNnIr3m2MWvsJuH978098&usqp=CAU"
     },
     "Rosethorn Hall" => {
         :kind => "Home",
@@ -31,6 +33,7 @@ listings = {
         :city => "Boise",
         :state => "Idaho",
         :postal => 83701,
+        :pic => "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf2HlTRDG5Z2zz1_nFD8rRpbZeCawu4EtsduMcRpvIuKX4So5_u-sHRX3MCzAVwO2OGBc&usqp=CAU"
     },
     "Honeyside" => {
         :kind => "Condominium",
@@ -42,6 +45,7 @@ listings = {
         :city => "Wichita",
         :state => "Kansas",
         :postal => 67052,
+        :pic => "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlSwaUihqPxjQqusNDSy71BJIrfqbseOBurGFxql_ZF6c5-gtvxhg03Tk7E17dio8mrUI&usqp=CAU"
     },
     "Proudspire Manor" => {
         :kind => "Home",
@@ -53,6 +57,7 @@ listings = {
         :city => "Buffalo",
         :state => "New York",
         :postal => 14201,
+        :pic => "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_xCObvY7y_7Fb8PxCQmHtzpfz0HxNJj0vc3Y7U_rmEFrgQF9PvNl8_vEXJHvs_VdHCsA&usqp=CAU"
     },
     "Breezehome" => {
         :kind => "Home",
@@ -64,6 +69,7 @@ listings = {
         :city => "Fresno",
         :state => "California",
         :postal => 93650,
+        :pic => "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpWtDYRFXJrrDVuLMClXTtheNkoweuW-LJ74C7is5Tyv9lP_M3QMw6wkpcXMkw3RDm6yk&usqp=CAU"
     },
 }
 

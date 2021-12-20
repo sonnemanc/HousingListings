@@ -10,29 +10,6 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_12_20_050649) do
-
-  create_table "listings", force: :cascade do |t|
-    t.string "name"
-    t.string "kind"
-    t.integer "bedrooms"
-    t.integer "bathrooms"
-    t.float "price"
-    t.text "description"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.string "street"
-    t.string "city"
-    t.string "state"
-    t.integer "postal"
-  end
-
-  create_table "users", force: :cascade do |t|
-    t.string "username"
-    t.text "email"
-    t.string "password_digest"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
+ActiveRecord::Schema.define(version: 0) do
 
 end
