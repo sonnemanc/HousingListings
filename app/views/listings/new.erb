@@ -3,18 +3,18 @@
 <h2>Add New Listing</h2>
 
 <form action="/listings" method="POST">
-  <label for="_">Name</label>
-  <input id="_" type="_" name="_" /><br>
-  <label for="_">Picture URL</label>
-  <input id="_" type="_" name="_" /><br>
-  <label for="_">Price</label>
-  <input id="_" type="_" name="_" /><br>
-  <label for="_">Bedrooms</label>
-  <input id="_" type="_" name="_" /><br>
-  <label for="_">Bathrooms</label>
-  <input id="_" type="_" name="_" /><br>
-  <label for="_">Description</label>
-  <input id="_" type="_" name="_" /><br>
+  <label for="name">Name:</label><br>
+  <input id="name" type="text" name="name" placeholder="Enter Property name" /><br>
+  <label for="pic">Picture URL:</label><br>
+  <input id="pic" type="text" name="pic" placeholder="Link Property Image" /><br>
+  <label for="price">Price: </label><br>
+  <input id="price" type="float" name="price" placeholder="Listed Price"/><br>
+  <label for="bedrooms">Bedrooms:</label><br>
+  <input id="bedrooms" type="integer" name="bedrooms" placeholder="Enter Bedrooms" /><br>
+  <label for="bathrooms">Bathrooms:</label><br>
+  <input id="bathrooms" type="integer" name="bathrooms" placeholder="Enter Bathrooms" /><br>
+  <label for="description">Description:</label><br>
+  <input id="description" type="text" name="description" placeholder="Property description goes here" /><br>
 
   <input type="submit" value="Create New Listing">
 </form>

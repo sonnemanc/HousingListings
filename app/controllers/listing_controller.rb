@@ -19,7 +19,7 @@ class ListingController < ApplicationController
 
     post '/listings' do
         if logged_in?
-          @listing = Listing.create(params['name'])
+          @listing = Listing.new(name: params[:name], price: params[:price], bedrooms: params[:bedrooms], bathrooms: params[:bathrooms], description: params[:description])
           @listing.save
           redirect to "/listings/#{@listing.id}"
         else
@@ -49,6 +49,16 @@ class ListingController < ApplicationController
         @listing = Listing.find_by_id(params[:id])
         @listing.update(name: params[:name], price: params[:price], bedrooms: params[:bedrooms], bathrooms: params[:bathrooms])
         redirect to "/listings/#{@listing.id}"
+    end
+
+    post '/listings/:id/delete' do
+      if logged_in?
+        @listing = Listing.find_by_id(params[:id])
+        @listing.delete
+        redirect to '/listings'
+      else
+        redirect to '/'
+      end
     end
 
 end
