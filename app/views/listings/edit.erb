@@ -13,7 +13,14 @@
   <label>Bathrooms:</label>
   <input id="hidden" type="hidden" name="_method" value="PATCH">
   <input type="integer" name="bathrooms" value="<%= @listing.bathrooms %>"><br>
-
+  <input id="hidden" type="hidden" name="_method" value="PATCH">
+  <input type="text" name="street" value="<%= @listing.street %>"><br>
+  <input id="hidden" type="hidden" name="_method" value="PATCH">
+  <input type="text" name="city" value="<%= @listing.city %>"><br>
+  <input id="hidden" type="hidden" name="_method" value="PATCH">
+  <input type="text" name="state" value="<%= @listing.state %>"><br>
+  <input id="hidden" type="hidden" name="_method" value="PATCH">
+  <input type="text" name="postal" value="<%= @listing.postal %>"><br>
   <input type="submit" value="submit">
 </form>
 

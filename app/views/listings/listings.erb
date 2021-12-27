@@ -7,6 +7,9 @@
       <p class="price">$<%= item.price %></p>
       <p>Bedrooms: <%= item.bedrooms %></p>
       <p>Bathrooms: <%= item.bathrooms%></p>
+      <p><%= item.street %>,
+        <br>
+        <%= item.city %>, <%= item.state %> <%= item.postal %> </p>  
       <form method="GET" action="/listings/<%=item.id%>">
         <button type="submit">Details</button>
       </form>

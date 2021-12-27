@@ -4,6 +4,9 @@
 <p class="price">$<%= @listing.price %></p>
 <p>Bedrooms: <%= @listing.bedrooms %></p>
 <p>Bathrooms: <%= @listing.bathrooms%></p>
+<p><%= @listing.street %>,
+  <br>
+ <%= @listing.city %>, <%= @listing.state %> <%= @listing.postal %> </p> 
 <p><%= @listing.description %></p>
 
 <form method="post" action="/listings/<%=@listing.id%>/delete">
