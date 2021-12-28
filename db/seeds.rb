@@ -9,7 +9,7 @@ listings = {
         :city => "Cleveland",
         :state => "Ohio",
         :postal => 44101,
-        :pic => "house.jpeg"
+        :pic => "https://i.imgur.com/vuEE11f.jpeg",
     },
     "Arborwatch" => {
         :kind => "Condominium",
@@ -21,7 +21,7 @@ listings = {
         :city => "Seattle",
         :state => "Washington",
         :postal => 98101,
-        :pic => "house.jpeg"
+        :pic => "https://i.imgur.com/eP38Q5D.jpeg"
     },
     "Rosethorn Hall" => {
         :kind => "Home",
@@ -33,7 +33,7 @@ listings = {
         :city => "Boise",
         :state => "Idaho",
         :postal => 83701,
-        :pic => "house.jpeg"
+        :pic => "https://i.imgur.com/a9QR04T.jpeg"
     },
     "Honeyside" => {
         :kind => "Condominium",
@@ -45,7 +45,7 @@ listings = {
         :city => "Wichita",
         :state => "Kansas",
         :postal => 67052,
-        :pic => "house.jpeg"
+        :pic => "https://i.imgur.com/MQUUNOe.jpeg"
     },
     "Proudspire Manor" => {
         :kind => "Home",
@@ -57,7 +57,7 @@ listings = {
         :city => "Buffalo",
         :state => "New York",
         :postal => 14201,
-        :pic => "house.jpeg"
+        :pic => "https://i.imgur.com/Rl7o8W5.jpeg"
     },
     "Breezehome" => {
         :kind => "Home",
@@ -69,7 +69,7 @@ listings = {
         :city => "Fresno",
         :state => "California",
         :postal => 93650,
-        :pic => "house.jpeg"
+        :pic => "https://i.imgur.com/Z5WV8DT.jpeg"
     },
 }
 
