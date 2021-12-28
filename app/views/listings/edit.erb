@@ -1,28 +1,40 @@
+
 <h2>Edit Listing</h2>
 
 <form method="post" action="/listings/<%=@listing.id%>">
-   <label>Name:</label>
+
+<label>Name:</label>
    <input id="hidden" type="hidden" name="_method" value="PATCH">
    <input type="text" name="name" value="<%= @listing.name %>"><br>
-   <label>Price:</label>
+<label>Price:</label>
   <input id="hidden" type="hidden" name="_method" value="PATCH">
   <input type="text" name="price" value="<%= @listing.price %>"><br>
-   <label>Bedrooms:</label>
+<label>Bedrooms:</label>
    <input id="hidden" type="hidden" name="_method" value="PATCH">
    <input type="integer" name="bedrooms" value="<%= @listing.bedrooms %>"><br>
-  <label>Bathrooms:</label>
+<label>Bathrooms:</label>
   <input id="hidden" type="hidden" name="_method" value="PATCH">
   <input type="integer" name="bathrooms" value="<%= @listing.bathrooms %>"><br>
+<label>Street:</label>
   <input id="hidden" type="hidden" name="_method" value="PATCH">
   <input type="text" name="street" value="<%= @listing.street %>"><br>
+<label>City:</label>
   <input id="hidden" type="hidden" name="_method" value="PATCH">
   <input type="text" name="city" value="<%= @listing.city %>"><br>
+<label>State:</label>
   <input id="hidden" type="hidden" name="_method" value="PATCH">
   <input type="text" name="state" value="<%= @listing.state %>"><br>
+<label>Postal Code:</label>
   <input id="hidden" type="hidden" name="_method" value="PATCH">
   <input type="text" name="postal" value="<%= @listing.postal %>"><br>
-  <input type="submit" value="submit">
-</form>
+<label>Description:</label>
+  <input id="hidden" type="hidden" name="_method" value="PATCH">
+  <input type="text" name="description" value="<%= @listing.description %>"><br>
+<label>Propery Picture:</label>
+  <input id="hidden" type="hidden" name="_method" value="PATCH">
+  <input type="text" name="pic" value="<%= @listing.pic %>"><br>
+
+<input type="submit" value="submit">
 
 
 
