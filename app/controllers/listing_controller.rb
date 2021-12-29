@@ -32,6 +32,7 @@ class ListingController < ApplicationController
     get '/listings/:id' do
       if logged_in?
         @listing = Listing.find(params[:id])
+        @realtor = Realtor.find(@listing.realtor_id)
         erb :'listings/show'
       else
         redirect to '/login'

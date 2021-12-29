@@ -1,3 +1,10 @@
+Realtor.delete_all
+Listing.delete_all
+
+vielana  = Realtor.create(name: "Vielena Dontanian", phone: "(555) 217-8070")
+avrecina = Realtor.create(name: "Avrecina Macelli",  phone: "(555) 217-8071")
+quitan   = Realtor.create(name: "Quitan Caerarian",  phone: "(555) 217-8072")
+
 listings = {
     "Benirus Manor" => {
         :kind => "Home",
@@ -10,6 +17,7 @@ listings = {
         :state => "Ohio",
         :postal => 44101,
         :pic => "https://i.imgur.com/vuEE11f.jpeg",
+        :realtor_id => 1
     },
     "Arborwatch" => {
         :kind => "Condominium",
@@ -21,7 +29,8 @@ listings = {
         :city => "Seattle",
         :state => "Washington",
         :postal => 98101,
-        :pic => "https://i.imgur.com/eP38Q5D.jpeg"
+        :pic => "https://i.imgur.com/eP38Q5D.jpeg",
+        :realtor_id => 2
     },
     "Rosethorn Hall" => {
         :kind => "Home",
@@ -33,7 +42,8 @@ listings = {
         :city => "Boise",
         :state => "Idaho",
         :postal => 83701,
-        :pic => "https://i.imgur.com/a9QR04T.jpeg"
+        :pic => "https://i.imgur.com/a9QR04T.jpeg",
+        :realtor_id => 3
     },
     "Honeyside" => {
         :kind => "Condominium",
@@ -45,7 +55,8 @@ listings = {
         :city => "Wichita",
         :state => "Kansas",
         :postal => 67052,
-        :pic => "https://i.imgur.com/MQUUNOe.jpeg"
+        :pic => "https://i.imgur.com/MQUUNOe.jpeg",
+        :realtor_id => 1
     },
     "Proudspire Manor" => {
         :kind => "Home",
@@ -57,7 +68,8 @@ listings = {
         :city => "Buffalo",
         :state => "New York",
         :postal => 14201,
-        :pic => "https://i.imgur.com/Rl7o8W5.jpeg"
+        :pic => "https://i.imgur.com/Rl7o8W5.jpeg",
+        :realtor_id => 2
     },
     "Breezehome" => {
         :kind => "Home",
@@ -69,7 +81,8 @@ listings = {
         :city => "Fresno",
         :state => "California",
         :postal => 93650,
-        :pic => "https://i.imgur.com/Z5WV8DT.jpeg"
+        :pic => "https://i.imgur.com/Z5WV8DT.jpeg",
+        :realtor_id => 3
     },
 }
 
