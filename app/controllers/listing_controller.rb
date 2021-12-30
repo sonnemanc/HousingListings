@@ -20,7 +20,7 @@ class ListingController < ApplicationController
     post '/listings' do
         if logged_in?
           @listing = Listing.new(name: params[:name], price: params[:price], bedrooms: params[:bedrooms], bathrooms: params[:bathrooms],
-           description: params[:description], street: params[:street], city: params[:city], state: params[:state], postal: params[:postal], pic: params[:pic]
+           description: params[:description], street: params[:street], city: params[:city], state: params[:state], postal: params[:postal], pic: params[:pic], realtor_id: params[:realtor_id]
           )
           @listing.save
           redirect to "/listings/#{@listing.id}"
@@ -51,7 +51,7 @@ class ListingController < ApplicationController
     post '/listings/:id' do
         @listing = Listing.find_by_id(params[:id])
         @listing.update(name: params[:name], price: params[:price], bedrooms: params[:bedrooms], bathrooms: params[:bathrooms],
-        description: params[:description], street: params[:street], city: params[:city], state: params[:state], postal: params[:postal], pic: params[:pic])
+        description: params[:description], street: params[:street], city: params[:city], state: params[:state], postal: params[:postal], pic: params[:pic], realtor_id: params[:realtor_id])
         redirect to "/listings/#{@listing.id}"
     end
 

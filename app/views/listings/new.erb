@@ -4,24 +4,29 @@
 
 <form action="/listings" method="POST">
   <label for="name">Name:</label><br>
-  <input id="name" type="text" name="name" placeholder="Enter Property name" /><br>
+    <input id="name" type="text" name="name" placeholder="Enter Property name" /><br>
   <label for="pic">Picture URL:</label><br>
-  <input id="pic" type="text" name="pic" placeholder="Link Property Image" /><br>
+    <input id="pic" type="text" name="pic" placeholder="Link Property Image" /><br>
   <label for="price">Price: </label><br>
-  <input id="price" type="float" name="price" placeholder="Listed Price"/><br>
+    <input id="price" type="float" name="price" placeholder="Listed Price"/><br>
   <label for="bedrooms">Bedrooms:</label><br>
-  <input id="bedrooms" type="integer" name="bedrooms" placeholder="Enter Bedrooms" /><br>
+    <input id="bedrooms" type="integer" name="bedrooms" placeholder="Enter Bedrooms" /><br>
   <label for="bathrooms">Bathrooms:</label><br>
-  <input id="bathrooms" type="integer" name="bathrooms" placeholder="Enter Bathrooms" /><br>
+    <input id="bathrooms" type="integer" name="bathrooms" placeholder="Enter Bathrooms" /><br>
   <label for="street">Street:</label><br>
-  <input id="street" type="text" name="street" placeholder="Enter Street." /><br>
+    <input id="street" type="text" name="street" placeholder="Enter Street." /><br>
   <label for="city">City:</label><br>
-  <input id="city" type="text" name="city" placeholder="Enter City." /><br>
+    <input id="city" type="text" name="city" placeholder="Enter City." /><br>
   <label for="state">State: </label><br>
-  <input id="state" type="text" name="state" placeholder="Enter State." /><br>
+    <input id="state" type="text" name="state" placeholder="Enter State." /><br>
   <label for="postal">Postal Code:</label><br>
-  <input id="postal" type="text" name="postal" placeholder="Enter Postal" /><br>
+    <input id="postal" type="text" name="postal" placeholder="Enter Postal" /><br>
   <label for="description">Description:</label><br>
-  <input id="description" type="text" name="description" placeholder="Property description goes here" /><br>
+    <input id="description" type="text" name="description" placeholder="Property description goes here" /><br><br>
+  <label for="realtors">Select a Realtor:</label><br>
+    <% Realtor.all.each do |r| %>
+      <input type="radio" name="realtor_id" id="<%= r.id %>" value="<%= r.id %>"><%= r.name %></input><br>
+    <% end %><br><br>
   <input type="submit" value="Create New Listing">
+
 </form>

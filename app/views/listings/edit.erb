@@ -33,7 +33,10 @@
 <label>Propery Picture:</label>
   <input id="hidden" type="hidden" name="_method" value="PATCH">
   <input type="text" name="pic" value="<%= @listing.pic %>"><br>
-
+<label for="realtors">Select a Realtor:</label><br>
+    <% Realtor.all.each do |r| %>
+      <input type="radio" name="realtor_id" id="<%= r.id %>" value="<%= r.id %>"><%= r.name %></input><br>
+    <% end %><br><br>
 <input type="submit" value="submit">
 
 
