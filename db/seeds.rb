@@ -32,7 +32,7 @@ listings = {
         :postal => 98101,
         :pic => "https://i.imgur.com/eP38Q5D.jpeg",
         :realtor_id => 2,
-        :user_id => 1
+        :user_id => 2
     },
     "Rosethorn Hall" => {
         :kind => "Home",
@@ -88,7 +88,7 @@ listings = {
         :postal => 93650,
         :pic => "https://i.imgur.com/Z5WV8DT.jpeg",
         :realtor_id => 3,
-        :user_id => 2
+        :user_id => 1
     },
 }
 

@@ -17,7 +17,7 @@ Specs:
 
  Ensure that users can't modify content created by other users  X
 
- Include user input validations
+ Include user input validations X
 
  BONUS - not required - Display validation failures to user with error message (example form URL e.g. /posts/new)
 
