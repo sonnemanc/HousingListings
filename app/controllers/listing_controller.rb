@@ -19,11 +19,16 @@ class ListingController < ApplicationController
 
     post '/listings' do
         if logged_in?
-          @listing = current_user.listings.build(name: params[:name], price: params[:price], bedrooms: params[:bedrooms], bathrooms: params[:bathrooms],
-           description: params[:description], street: params[:street], city: params[:city], state: params[:state], postal: params[:postal], pic: params[:pic], realtor_id: params[:realtor_id]
-          )
-          @listing.save
-          redirect to "/listings/#{@listing.id}"
+          if params[:name] == "" ||params[:price] == "" ||params[:pic] == "" ||params[:bedroom] == "" ||params[:bathroom] == "" ||params[:street] == "" ||params[:city] == ""
+            redirect to "/listings/new"
+
+          else
+            @listing = current_user.listings.build(name: params[:name], price: params[:price], bedrooms: params[:bedrooms], bathrooms: params[:bathrooms],
+             description: params[:description], street: params[:street], city: params[:city], state: params[:state], postal: params[:postal], pic: params[:pic], realtor_id: params[:realtor_id]
+            )
+            @listing.save
+            redirect to "/listings/#{@listing.id}"
+          end
         else
           redirect to '/login'
         end
@@ -71,4 +76,12 @@ class ListingController < ApplicationController
       end
     end
 
+    get '/users' do
+      if logged_in?
+        @listings = current_user.listings
+        erb :'users/show'
+      else
+        redirect to '/login'
+      end
+  end
 end
