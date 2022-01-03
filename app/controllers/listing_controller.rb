@@ -19,7 +19,7 @@ class ListingController < ApplicationController
 
     post '/listings' do
         if logged_in?
-          @listing = Listing.new(name: params[:name], price: params[:price], bedrooms: params[:bedrooms], bathrooms: params[:bathrooms],
+          @listing = current_user.listings.build(name: params[:name], price: params[:price], bedrooms: params[:bedrooms], bathrooms: params[:bathrooms],
            description: params[:description], street: params[:street], city: params[:city], state: params[:state], postal: params[:postal], pic: params[:pic], realtor_id: params[:realtor_id]
           )
           @listing.save
@@ -42,7 +42,11 @@ class ListingController < ApplicationController
     get '/listings/:id/edit' do
       if logged_in?
         @listing = Listing.find(params[:id])
-        erb :'listings/edit'
+        if @listing && @listing.user == current_user
+          erb :'listings/edit'
+        else
+          redirect to '/listings'
+        end
       else
         redirect to '/login'
       end
@@ -58,7 +62,9 @@ class ListingController < ApplicationController
     post '/listings/:id/delete' do
       if logged_in?
         @listing = Listing.find_by_id(params[:id])
-        @listing.delete
+        if @listing && @listing.user == current_user
+          @listing.delete
+        end
         redirect to '/listings'
       else
         redirect to '/'

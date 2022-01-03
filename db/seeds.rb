@@ -17,7 +17,8 @@ listings = {
         :state => "Ohio",
         :postal => 44101,
         :pic => "https://i.imgur.com/vuEE11f.jpeg",
-        :realtor_id => 1
+        :realtor_id => 1,
+        :user_id => 1
     },
     "Arborwatch" => {
         :kind => "Condominium",
@@ -30,7 +31,8 @@ listings = {
         :state => "Washington",
         :postal => 98101,
         :pic => "https://i.imgur.com/eP38Q5D.jpeg",
-        :realtor_id => 2
+        :realtor_id => 2,
+        :user_id => 1
     },
     "Rosethorn Hall" => {
         :kind => "Home",
@@ -43,7 +45,8 @@ listings = {
         :state => "Idaho",
         :postal => 83701,
         :pic => "https://i.imgur.com/a9QR04T.jpeg",
-        :realtor_id => 3
+        :realtor_id => 3,
+        :user_id => 1
     },
     "Honeyside" => {
         :kind => "Condominium",
@@ -56,7 +59,8 @@ listings = {
         :state => "Kansas",
         :postal => 67052,
         :pic => "https://i.imgur.com/MQUUNOe.jpeg",
-        :realtor_id => 1
+        :realtor_id => 1,
+        :user_id => 2
     },
     "Proudspire Manor" => {
         :kind => "Home",
@@ -69,7 +73,8 @@ listings = {
         :state => "New York",
         :postal => 14201,
         :pic => "https://i.imgur.com/Rl7o8W5.jpeg",
-        :realtor_id => 2
+        :realtor_id => 2,
+        :user_id => 2
     },
     "Breezehome" => {
         :kind => "Home",
@@ -82,7 +87,8 @@ listings = {
         :state => "California",
         :postal => 93650,
         :pic => "https://i.imgur.com/Z5WV8DT.jpeg",
-        :realtor_id => 3
+        :realtor_id => 3,
+        :user_id => 2
     },
 }
 

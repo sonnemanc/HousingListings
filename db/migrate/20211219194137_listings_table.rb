@@ -8,6 +8,7 @@ class ListingsTable < ActiveRecord::Migration[6.1]
       t.float :price
       t.text :description
       t.text :pic
+      t.integer :user_id
 
       t.timestamps
     end
